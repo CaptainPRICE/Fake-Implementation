@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeImplementation", "FakeImplementation\FakeImplementation.csproj", "{BDCCDE8B-F21F-46E3-979F-DF4409610232}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeImplementation.Cecil", "FakeImplementation.Cecil\FakeImplementation.Cecil.csproj", "{9F67F741-5ECE-4AB5-A3D9-F82079773A1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDCCDE8B-F21F-46E3-979F-DF4409610232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDCCDE8B-F21F-46E3-979F-DF4409610232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDCCDE8B-F21F-46E3-979F-DF4409610232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDCCDE8B-F21F-46E3-979F-DF4409610232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F67F741-5ECE-4AB5-A3D9-F82079773A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F67F741-5ECE-4AB5-A3D9-F82079773A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F67F741-5ECE-4AB5-A3D9-F82079773A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F67F741-5ECE-4AB5-A3D9-F82079773A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0742E93-305C-4FE0-A5B4-8D7626D7E0F9}
+	EndGlobalSection
+EndGlobal

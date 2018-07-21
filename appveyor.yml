@@ -1,0 +1,16 @@
+version: 1.0.{build}
+skip_non_tags: true
+image: Visual Studio 2017
+clone_folder: c:\projects\fake-implementation
+build:
+  verbosity: quiet
+test: off
+deploy:
+- provider: GitHub
+  release: Fake Implementation
+  auth_token:
+    secure: 2O25Qhke4CCmhDi1+ojmsugzYHhp2mCPjbGQ83iK3rh0zrYoqtbEi9GxtOdHC7Iv3Jc4Tu23UhN5/Nr4+/ZqvAfO8qdcb9BEPLIQ+kHmTgY=
+  draft: true
+  force_update: true
+  on:
+    branch: master
