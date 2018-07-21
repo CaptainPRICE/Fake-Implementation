@@ -1,5 +1,8 @@
 version: 1.0.{build}
+skip_non_tags: true
 image: Visual Studio 2017
+configuration: Release
+platform: Any CPU
 clone_folder: c:\projects\fake-implementation
 assembly_info:
   patch: true
@@ -8,7 +11,14 @@ assembly_info:
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
 build:
-  verbosity: quiet
+  project: Fake Implementation.sln
+  verbosity: minimal
+after_build:
+- cmd: >-
+    7z a -tzip -r -y "C:\projects\fake-implementation\FakeImplementation.zip" "c:\projects\fake-implementation\FakeImplementation\bin\Release\*.exe" "c:\projects\fake-implementation\FakeImplementation\bin\Release\*.dll"
+    7z a -tzip -r -y "C:\projects\fake-implementation\FakeImplementation.Cecil.zip" "c:\projects\fake-implementation\FakeImplementation.Cecil\bin\Release\*.exe" "c:\projects\fake-implementation\FakeImplementation.Cecil\bin\Release\*.dll"
+    appveyor PushArtifact "FakeImplementation.zip"
+    appveyor PushArtifact "FakeImplementation.Cecil.zip"
 test: off
 deploy:
 - provider: GitHub
