@@ -7,6 +7,16 @@ Removes instructions/variables from all of the methods in the given input assemb
 
 The point of this is being it allows developers to generate a "preview" assembly, that is, all of the implementation is removed out.
 
+### **UPDATE**
+This tool has been superseded by (official) C# compiler (in 7.1 release).  
+Therefore I recommend using the official compiler option (`-refonly`), the concept is called "Reference-only assembly" ([see docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/refonly-compiler-option)).  
+And for more information, [click here](https://docs.microsoft.com/en-us/dotnet/standard/assembly/reference-assemblies).  
+This tool is small and easy to use, but I don't know if there is anyone actually making the use of such concept in the wild.  
+This were supposed to be pushed towards *Facepunch* devs, for their prototype game called `S&Box`, but I don't think I have established this concept back in a day.  
+As it stands now, you can continue to use this tool, it will remain working for those of who used it without any problems in their build process.  
+I am closing this project as I believe it is final and stable to use. I no longer have much interest in developing this project any further.  
+*Shutdown.*
+
 ### Usage scenario & More info
 
 The main goal of this project is to **provide support to 3rd-party .NET developers to build stuff for Your unreleased/internal software**, and be ahead of time together.  
